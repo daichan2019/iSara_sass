@@ -1,0 +1,35 @@
+.section13 {
+  padding: 40px 0 80px;
+  text-align: center;
+  color: #fff;
+  background-image: url(../../img/specialdetail.jpg);
+  background-position: center;
+  background-size: cover;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include txt-l;
+    margin-top: 24px;
+  }
+  &__text {
+    @include txt-m;
+    margin-top: 20px;
+  }
+  &__feature-wrap {
+    @include section-title-wrap;
+    height: 70px;
+    margin: 40px auto 0;
+    &::before {
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+    }
+    &::after {
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+    }
+  }
+  &__feature {
+    @include txt-l;
+  }
+}

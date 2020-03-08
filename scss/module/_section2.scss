@@ -1,0 +1,32 @@
+.section2 {
+  background-image: url(../img/introbottom.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0 113px;
+  box-sizing: border-box;
+  text-align: center;
+  &__container {
+    @include container;
+  }
+  &__title-wrap {
+    @include section-title-wrap;
+  }
+  &__title {
+    @include section-title;
+    @include txt-l;
+  }
+  &__text-wrap {
+    margin-top: 40px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 20px;
+    span {
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, $color-main 70%);
+    }
+  }
+  &__text + &__text {
+    margin-top: 35px;
+  }
+}

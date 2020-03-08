@@ -1,0 +1,40 @@
+.caution2 {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+  background-color: $color-main;
+  color: #fff;
+  &__container {
+    @include container;
+  }
+  &__circle {
+    @include circle;
+    background-color: #fff;
+    color: $color-main;
+  }
+  &__title-wrap {
+    @include section-title-wrap;
+    &::before {
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+    }
+    &::after {
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+    }
+  }
+  &__title {
+    @include txt-l;
+  }
+  &::after {
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 25px solid transparent;
+    border-top-color: $color-main;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+  }
+}

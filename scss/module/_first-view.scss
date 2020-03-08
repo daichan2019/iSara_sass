@@ -1,0 +1,33 @@
+.first-view {
+  padding-top: 75px;
+  &__wrap {
+    background-image: url(../img/main.jpg);
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    text-align: center;
+  }
+  &__container {
+    display: table-cell;
+    vertical-align: middle;
+    @include container;
+  }
+  &__lead {
+    @include txt-l;
+  }
+  &__lead + &__lead {
+    margin-top: 10px;
+  }
+  &__page-top {
+    margin-top: 10px;
+    img {
+      width: 317px;
+    }
+  }
+  &__heading {
+    margin-top: 40px;
+    @include txt-m;
+  }
+}

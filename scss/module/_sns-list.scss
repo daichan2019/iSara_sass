@@ -1,0 +1,32 @@
+.sns-list {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  .sns-list__item {
+    border-radius: 3px;
+    font-size: 11px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px 0;
+    span i {
+      width: 14px;
+      height: 14px;
+      margin-right: 3px;
+    }
+  }
+  .twitter {
+    background-color: $color-twitter;
+    width: 75px;
+  }
+  .thumbs-up {
+    background-color: $color-sns-item;
+    width: 78px;
+  }
+  .share {
+    background-color: $color-sns-item;
+    width: 50px;
+  }
+}

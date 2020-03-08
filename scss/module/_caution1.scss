@@ -1,0 +1,15 @@
+.caution1 {
+  padding: 40px 0;
+    text-align: center;
+    background-color: $color-caution-bg;
+    color: #fff;
+    &__container {
+      @include container;
+    }
+    &__text {
+      @include txt-m;
+      span {
+        color: $color-main;
+      }
+    }
+}

@@ -1,0 +1,59 @@
+.section4 {
+  background-image: url(../../img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  &__container {
+    @include container;
+  }
+  &__heading-wrap {
+    color: #fff;
+    margin: 20px 0 0;
+  }
+  &__heading {
+    @include txt-l;
+  }
+  &__lead {
+    @include txt-m;
+    margin: 20px 0 0;
+    span {
+      color: $color-main;
+    }
+  }
+  &__lead + &__lead {
+    margin: 10px 0 0;
+  }
+  &__item-wrap {
+    margin: 30px auto 0;
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 32%;
+    box-sizing: border-box;
+  }
+  &__step {
+    background-color: $color-main;
+    border-radius: 5px;
+    color: #fff;
+    @include txt-xs;
+  }
+  &__item-lead {
+    margin: 30px 0 0;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &__item-text--xs {
+    @include txt-xs;
+  }
+  &__item-text {
+    margin: 18px 0 0;
+    @include txt-s;
+  }
+}

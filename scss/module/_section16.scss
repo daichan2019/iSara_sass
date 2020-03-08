@@ -1,0 +1,42 @@
+.section16 {
+  padding: 40px 0 60px;
+  text-align: center;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include txt-l;
+    margin-top: 20px;
+  }
+  &__faq-wrap {
+    margin: 40px auto 0;
+    width: 938px;
+  }
+  &__faq {
+    @include txt-m;
+    padding: 20px 20px;
+    color: #000000;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+    line-height: 1.1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    &::after {
+      content: "";
+      float: right;
+      width: 15px;
+      height: 15px;
+      border-top: 5px solid #e5e5e5;
+      border-right: 5px solid #e5e5e5;
+      transform: translateX(-50%) rotate(135deg);
+      box-sizing: border-box;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__faq + &__faq {
+    margin-top: 5px;
+  }
+}

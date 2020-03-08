@@ -1,0 +1,57 @@
+.section12 {
+  padding: 40px 0;
+  text-align: center;
+  background-color: $color-sec12;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include txt-l;
+    margin-top: 20px;
+  }
+  &__lead {
+    @include txt-s;
+    margin-top: 40px;
+    span {
+      color: #fff;
+    }
+  }
+  &__box {
+    margin-top: 94px;
+    padding: 40px;
+    border: 2px solid #fff;
+  }
+  &__box-heading {
+    @include txt-l;
+    width: 576px;
+    margin: -68px auto 0;
+    background-color: $color-sec12;
+  }
+  &__item-wrap {
+    width: 995px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+  }
+  &__item {
+    @include circle;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    vertical-align: middle;
+  }
+  &__text-mask {
+    width: 220px;
+  }
+  &__item-text--yellow {
+    font-size: 24px;
+    font-weight: 300;
+    color: $color-main;
+  }
+  &__item-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}

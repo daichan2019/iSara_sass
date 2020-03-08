@@ -1,0 +1,44 @@
+.section1 {
+  background-color: $color-main;
+  padding: 30px 0 40px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  &__container {
+    @include container;
+  }
+  &__lead {
+    @include txt-m;
+  }
+  &__catch {
+    width: 463px;
+    height: 25px;
+    font-size: 18px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    margin: 13px auto 0;
+    box-sizing: border-box;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+
+  }
+  &__button {
+    @include button;
+    width: 1028px;
+    height: 104px;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 45px auto 0;
+  }
+  &__application {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 70px 0 0;
+  }
+  &__application-text + &__application-text {
+    margin: 30px 0 0;
+  }
+  .sns-list {
+    margin: 30px 0 0;
+  }
+}

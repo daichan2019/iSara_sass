@@ -1,0 +1,49 @@
+.section8 {
+  padding: 40px 0 60px;
+  text-align: center;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include txt-l;
+  }
+  &__subhead {
+    @include txt-s;
+    margin-top: 10px;
+  }
+  &__lead {
+    @include txt-xs;
+    margin-top: 35px;
+  }
+  &__item-wrap {
+    margin: 30px auto 0;
+    width: 780px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__item + &__item {
+    margin-top: 40px;
+  }
+  &__img-wrap {
+    img {
+      width: 245px;
+      height: 245px;
+      border: solid 3px $color-main;
+      box-sizing: border-box;
+    }
+  }
+  &__caption-wrap {
+    margin-left: 30px;
+    font-size: 18px;
+    text-align: left;
+    font-style: italic;
+    color: #777;
+  }
+  &__caption {
+    margin-top: 15px;
+  }
+  &__name {
+    margin-top: 8px;
+  }
+}

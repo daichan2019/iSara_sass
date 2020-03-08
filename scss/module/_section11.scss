@@ -1,0 +1,34 @@
+.section11 {
+  background-image: url(../../img/bangkokbg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0 90px;
+  color: #fff;
+  &__container {
+    @include container;
+  }
+  &__contents-wrap {
+    margin: 20px auto 0;
+    width: 1080px;
+  }
+  &__title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+  &__text--small {
+    @include txt-xs;
+    margin-top: 20px;
+  }
+  &__lists {
+    margin-top: 30px;
+  }
+  &__list {
+    @include txt-s;
+    margin-top: 10px;
+  }
+  &__text {
+    @include txt-m;
+    margin-top: 10px;
+  }
+}

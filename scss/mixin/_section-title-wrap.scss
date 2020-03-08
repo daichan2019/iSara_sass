@@ -1,0 +1,32 @@
+@mixin section-title-wrap {
+  margin: 0 auto;
+    position: relative;
+    width: 860px;
+    max-width: calc(100% - 40px);
+    padding: 15px 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      border-top: 4px solid $color-main;
+      border-left: 4px solid $color-main;
+    }
+    &::after {
+      content: "";
+      bottom: 0;
+      right: 0;
+      border-bottom: 4px solid $color-main;
+      border-right: 4px solid $color-main;
+    }
+}

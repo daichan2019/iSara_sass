@@ -1,0 +1,19 @@
+@mixin txt-l {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@mixin txt-m {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@mixin txt-s {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin txt-xs {
+  font-size: 14px;
+  font-weight: 300;
+}

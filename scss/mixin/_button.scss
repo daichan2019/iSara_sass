@@ -1,0 +1,9 @@
+@mixin button {
+  cursor: pointer;
+  color: #fff;
+  background-color: $color-button;
+  border-radius: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

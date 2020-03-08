@@ -1,0 +1,12 @@
+.caution3 {
+  background-color: $color-caution-bg;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  &__container {
+    @include container;
+  }
+  &__text {
+    @include txt-m;
+  }
+}

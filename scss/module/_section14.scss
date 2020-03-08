@@ -1,0 +1,40 @@
+.section14 {
+  text-align: center;
+  padding: 40px 0 66px;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include txt-l;
+    margin-top: 20px;
+  }
+  &__subhead {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 35px;
+  }
+  &__item-wrap {
+    margin: 40px auto 0;
+    width: 860px;
+    display: flex;
+  }
+  &__img-wrap {
+    img {
+      width: 193px;
+      height: 145px;
+    }
+  }
+  &__text-wrap {
+    margin-left: 30px;
+    text-align: left;
+  }
+  &__text + &__text {
+    margin-top: 10px;
+  }
+  &__text--mt {
+    margin-top: 33px;
+  }
+  &__text--last {
+    margin-top: 10px;
+  }
+}
